@@ -1,0 +1,39 @@
+
+.button{
+    position: relative;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+  
+    background: linear-gradient(315deg, #CD1013 1.19%, #FF0004 1.5%, #2500FF 94.46%);
+    color:white;  
+    z-index:1;
+    margin-top:40px;
+    height: 82px;
+    width:240px;
+    /* padding:28px, 40px, 28px, 40px; */
+    padding-top: 25px;;
+    line-height: 32px;
+    font-family: 'Orbitron';
+    font-size: 21px;
+    font-weight: 900;
+    text-align: center;
+    
+}
+.button::before{
+    content: "";
+    background-color: #1f1f1f;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 1s;
+    z-index:-1;
+}
+.button:hover::before{
+    transform:scaleX(1)
+}
+#btn-learn-more{
+    text-decoration: none;
+}
